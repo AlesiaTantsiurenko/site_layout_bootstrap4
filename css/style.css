@@ -1,0 +1,602 @@
+/*Подключение шрифтов*/
+
+@import 'fonts.css';
+
+body {
+    font-family: 'Open Sans';
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/*Меню*/
+
+.menu {
+    align-items: center;
+}
+.menu-bar {
+    background: #fff;
+    padding: 20px 0;
+    color: #212121;
+}
+.menu-item {
+    margin-left: 37px;
+}
+.menu-item a {
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    color: #212121;
+}
+.menu-item a:hover {
+    text-decoration: none;
+    color: #868686;
+}
+
+/*Шапка*/
+
+.header {
+    color: #fff;
+    text-align: center;
+    padding: 180px 0;
+    background-size: cover;
+    background-position: 0 100%;
+    background-image: url(../img/header_1.png);
+}
+.header-title {
+    font-size: 55px;
+}
+.header-text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.button {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.3s;
+    background: #00897b;
+    border: 2px solid #00897b;
+}
+.button:hover {
+   background: transparent;
+   border: 2px solid white;
+}
+
+/*О нас*/
+
+.about {
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+.about-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-text {
+    color: #212121;
+    font-size: 15px;
+    margin-bottom: 110px;
+}
+.about-h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+}
+
+/*Наши услуги*/
+
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #e4fdf9;
+    text-align: center;
+}
+.our-card {
+    background: #fff;
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.tex{
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.our-card:hover {
+    background: #00897b;
+    color: #fff;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+.our-card:hover .about-text {
+    color: #fff;
+}
+.our-card:hover .icon {
+    color: #fff;
+}
+.our-card:hover .button-services {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.icon {
+    font-size: 60px;
+    color: #000;
+    transition: 0.3s;
+}
+.button-services {
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid #00897b;
+    background: transparent;
+    padding: 14px 12px 14px;
+    font-family: 'Open Sans Semibold';
+    transition: 0.3s;
+}
+.button-services:hover {
+    cursor: pointer;
+}
+
+/*Портфолио*/
+
+.portfolio {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 135px;
+}
+.portfolio button:hover,
+.focused {
+    color: #000;
+    border: 2px solid #00897b;
+    background: transparent;
+}
+.portfolio img {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.filter {
+    padding: 120px 0px;
+}
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+.text {
+    display:none;
+}
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left:0;
+    z-index: 3;
+    text-align: center;
+}
+
+/* Цены */
+
+.pricing {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #f0f0f0;
+    text-align: center;
+}
+.price {
+    margin-bottom: 20px;
+    background:#fff;
+    transition:0.3s;
+}
+.price-head {
+    color: #fff;
+    background-image: url(../img/rec.png);
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 211px;
+}
+.price-head p {
+    font-size: 25px;
+}
+.price-head {
+    font-size: 50px;
+}
+.price-head sub {
+    vertical-align: middle;
+    font-size: 17px;
+}
+.price-head sup {
+    vertical-align: middle;
+    font-size: 25px;
+}
+.price-body {
+    font-size: 17px;
+    color: #212121;
+
+}
+.price-body ul li {
+    padding-top: 28px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    max-width: 175px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.price-footer {
+    padding: 60px 0;
+
+}
+.price-footer button {
+  cursor: pointer
+  border: 2px solid #212121;
+  color: #212121;
+  background: transparent;
+  font-size: 20px;
+  width: 180px;
+  height: 60px;
+  transition: 0.3s;
+}
+.price-footer button:hover {
+    text-transform: uppercase;
+    color: white;
+    background: #00897b;
+    border: none;
+
+}
+.price:hover {
+     box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+/* Команда */
+
+.team {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+.team h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+}
+.team p {
+   margin-bottom: 30px;
+   font-size: 15px;
+}
+.icons {
+    min-width:0;
+    display: flex;
+    justify-content: center;
+}
+.icons a i {
+    transition: 0.3s;
+}
+.icons i:nth-child(1) {
+    color: #f0f0f0;
+}
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+.icons a:hover i:nth-child(2) {
+    color: #fff;
+}
+.team img {
+   margin: 0 auto;
+   max-width: 340px;
+}
+
+.slider {
+   margin-top: 125px;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-track {
+    display: flex;
+}
+
+.dots-style {
+   margin-top: 115px;
+   display: flex;
+   justify-content: center;
+}
+
+.dots-style button {
+   background: #00897b;
+   border: none;
+   border-radius: 50%;
+   font-size: 0;
+   height: 15px;
+   width: 15px;
+   margin: 5px;
+}
+
+.dots-style li[class="slick-active"] button {
+   background: #3949ab;
+}
+
+/*Блог*/
+
+.blog-item {
+   width: 48%;
+}
+.blog-item a {
+    text-decoration: none;
+}
+.left>div:first-child {
+   order: 1;
+}
+
+.left>div:last-child {
+   order: 2;
+}
+
+.right>div:first-child {
+   order: 2;
+}
+
+.right>div:last-child {
+   order: 1;
+}
+
+.blog {
+   text-align: left;
+   margin-top: 60px;
+}
+
+.blog a {
+   font-size: 25px;
+   color: #00897b;
+   font-family: 'Open Sans Semibold';
+}
+
+.blog div {
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+
+.blog span {
+   font-size: 17px;
+   font-family: 'Open Sans Semibold';
+   margin-right: 35px;
+}
+
+.blog i {
+   margin-right: 15px;
+}
+
+.blog p {
+   font-size: 15px;
+}
+
+.button-blog {
+   width: 220px;
+   height: 70px;
+   text-transform: uppercase;
+   color: white;
+   font-size: 20px;
+   margin-top: 125px;
+   transition: 0.3s;
+   border: 2px solid #00897b;
+   cursor: pointer;
+   background: #00897b;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+}
+
+.button-blog:hover {
+   background: transparent;
+   color: #000;
+}
+
+/*Футер*/
+
+.footer {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #fff;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.footer .about-text{
+     color: #fff;
+}
+.fa-map-marker-alt, .fa-phone, .fa-envelope{
+   font-size: 62px;
+   color: #fff;
+}
+.circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3949ab;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px;
+}
+.circle + p {
+    font-size: 20px;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer input, .footer textarea {
+    padding: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.footer input:focus, .footer textarea:focus {
+    outline: none;
+}
+.footer textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    resize: none;
+}
+.footer button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #212121;
+    padding: 20px 80px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.form {
+    margin-top: 70px;
+}
+.footer button:hover {
+    opacity: 0.6;
+}
+.rules {
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*Кнопка наверх*/
+
+#toTop {
+    z-index:999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    fon-size: 20px;
+    border-radius: 3px;
+    background: #00897b;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #000;
+
+}
+.menu-icon {
+    display: none;
+}
+
+/*Медиа-запрос для планшетной версии*/
+
+@media screen and (max-width: 1199px) {
+    nav {
+        display: none;
+    }
+    .logo-bar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    }
+    .menu-icon {
+        display: block;
+        background:#00897b;
+        border: none;
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .menu-item {
+        margin-left: 0;
+    }
+    .blog {
+        margin-top: 10px;
+    }
+    .footer input, textarea {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*Медиа-запрос для мобильной версии*/
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+    .header-title {
+        font-size: 45px;
+    }
+    .header-text {
+        margin-bottom: 20px;
+    }
+    .button {
+        margin-bottom: 10px;
+    }
+    .about {
+        padding: 20px;
+    }
+    .about-text {
+        margin-bottom: 20px;
+    }
+    .services {
+        padding: 20px;
+    }
+    .portfolio {
+        padding: 20px;
+    }
+    .filter {
+        padding: 20px;
+    }
+    .pricing {
+        padding: 20px;
+    }
+    .team {
+        padding: 20px 0;
+    }
+    .slider {
+        margin-top: 10px;
+    }
+    .team img {
+    max-width: 320px;
+    }
+    .dots-style {
+        margin-top: 10px;
+    }
+    .left, .right {
+        flex-direction: column;
+    }
+    .blog-item, .blog {
+        width: 100%;
+    }
+    .right>div:first-child {
+       order: 1;
+    }
+
+    .right>div:last-child {
+       order: 2;
+    }
+    .blog i {
+        margin-right: 5px;
+    }
+    .button-blog {
+        margin-top: 10px;
+    }
+    .footer {
+        padding: 20px;
+    }
+    .form {
+        margin-top: 20px;
+    }
+}
